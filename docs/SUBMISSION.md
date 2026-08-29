@@ -82,22 +82,22 @@ Data sources: PancakeSwap/Uniswap V3 pools · Venus Protocol · Gate.io · DefiL
 
 | 字段 | 填什么 |
 |---|---|
-| **Demo / Live URL** | 视频链接（YouTube / B 站非公开链接）。若要求可访问的线上 demo，需把前端部署到公网（见下） |
-| **Repository** | 推到 GitHub 后的仓库地址（**记得先删掉 `.env`、私钥等敏感文件**） |
-| **Video** | 3–4 分钟 demo 视频，见 [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) |
-| **Additional docs** | `Agent_Advantage_Report.md` |
+| **Demo / Live URL** | `https://youtu.be/cUfwagcq6BE`（demo 视频即是 live demo；前端公网部署待定，按多数黑客松要求"视频 + 仓库"即可，决赛再上 CloudStudio） |
+| **Repository** | `https://github.com/jnhualu-art/bnb-agent-studio`（已推送 main 分支，30 个 tracked 文件，私钥/`.env`/`.log` 已清空并 `.gitignore` 排除） |
+| **Video** | `https://youtu.be/cUfwagcq6BE`（YouTube 公开，标题：BNB Agent Studio — On-chain AI Agent Marketplace Demo） |
+| **Additional docs** | [`docs/Agent_Advantage_Report.md`](Agent_Advantage_Report.md)（TermiX $10k 赛道核心材料） |
 
 ---
 
 ## 提交前最后检查
 
-- [ ] 视频已上传，链接可访问（**非公开链接也要确认能打开**）
-- [ ] 仓库已推 GitHub，且：
-  - [ ] 无私钥、无 API key（检查 `.env`、`*.log`、`registered_agents.json`）
-  - [ ] `.gitignore` 包含 `.venv/`、`node_modules/`、`__pycache__/`、`.env`
-- [ ] `Agent_Advantage_Report.md` 已作为附加材料提交
-- [ ] TermiX 赛道已勾选
-- [ ] 项目描述里**没有**夸大实盘收益（我们的卖点是决策质量 + 可验证性）
+- [x] 视频已上传，链接可访问（**非公开链接也要确认能打开**）
+- [x] 仓库已推 GitHub，且：
+  - [x] 无私钥、无 API key（`grep c0hb539j|9fc0a774` 零命中，`.log` 全部清理，Alchemy key 改读环境变量）
+  - [x] `.gitignore` 包含 `.venv/`、`*.log`、`wheels/`、Vite 残留等
+- [x] `Agent_Advantage_Report.md` 已作为附加材料提交
+- [x] TermiX 赛道已勾选
+- [x] 项目描述里**没有**夸大实盘收益（我们的卖点是决策质量 + 可验证性）
 
 ---
 
