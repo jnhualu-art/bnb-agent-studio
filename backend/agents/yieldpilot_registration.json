@@ -1,0 +1,24 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "yieldpilot.agent",
+  "description": "Routes stablecoin liquidity across BSC pools by risk-adjusted APY. Filters noise pools via TVL floor and APY sanity bounds, scores candidates by APY x stability(30d mean deviation) x liquidity(TVL), and migrates only when uplift exceeds the gas-cost threshold.",
+  "image": "",
+  "services": [],
+  "x402Support": true,
+  "active": true,
+  "registrations": [],
+  "supportedTrust": [
+    "reputation"
+  ],
+  "tags": [
+    "Yield Optimisation"
+  ],
+  "category": "yield_optimisation",
+  "categoryLabel": "Yield Optimisation",
+  "attributes": [
+    {
+      "trait_type": "category",
+      "value": "Yield Optimisation"
+    }
+  ]
+}

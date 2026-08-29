@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs (运行日志, 可能含 RPC 端点/敏感信息)
+*.log
+
+# Secrets / env
+.env
+.env.*
+*.key
+
+# Node
+node_modules/
+
+# Vite 构建版残留(零构建版用原生 ESM + 本地 Vue 运行时, 见 frontend/index.html)
+frontend/src/**/*.vue
+frontend/vite.config.js
+frontend/package.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

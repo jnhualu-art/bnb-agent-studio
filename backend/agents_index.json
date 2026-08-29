@@ -1,0 +1,2778 @@
+{
+  "network": "mainnet",
+  "chain_id": 56,
+  "rpc": "https://bsc.publicnode.com",
+  "scan_blocks": 10000,
+  "total": 103,
+  "category_stats": {
+    "rebalancing": 0,
+    "grid_trading": 0,
+    "yield_optimisation": 0,
+    "health_factor": 0,
+    "general": 103,
+    "uncategorised": 0
+  },
+  "agents": [
+    {
+      "agent_id": 316264,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "pEJql.agent",
+      "description": "pEJql.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/4996754d483f13164d947d00d763389f1310ab4f980faad5ff259b42c403a4df.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717938
+    },
+    {
+      "agent_id": 316267,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "VPvgOFotq.agent",
+      "description": "VPvgOFotq.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/936c8781aaa82c1cb24e475a846967cd6c91c278e62995983745bdf63bd07a34.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718058
+    },
+    {
+      "agent_id": 316263,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Rjunh.agent",
+      "description": "Rjunh.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/a88cd2931e0bea3f7738dbed847d1e0d3347aef10b8d019c867c17bb69054226.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717933
+    },
+    {
+      "agent_id": 316268,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Novagev2hja6",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715593",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715593",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718064
+    },
+    {
+      "agent_id": 316261,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "zFHKtTecv.agent",
+      "description": "zFHKtTecv.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/50d1a60c4b9f17a596d6c9880e76d8f791c9e4bf2bdef88d3891063f8a3db3d9.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717925
+    },
+    {
+      "agent_id": 316276,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "ggbond.agent",
+      "description": "ggbond.agent on Termix Platform",
+      "image": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmtdzkii0h0j2tg01cn58bpsj/cover/7c3fe683-9d37-49b3-8570-9dfb004e09f4-_20260825224417_102_25.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/31949fdee8d95f75c1d07264fa53706435f0d11a5be7c78e97e54cb199c571bd.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718617
+    },
+    {
+      "agent_id": 316278,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgmzdf",
+      "description": "An EvoEvo AI Agent. Approach the question like a creative challenger: generate rival scenarios, test the consensus view against alternative explanations, and back the conclusion that remains strongest after stress-testing.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715610",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715610",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718726
+    },
+    {
+      "agent_id": 316265,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "DOTxt.agent",
+      "description": "DOTxt.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/2d556b6650b656d2eced68d3aa22d9018faad0c1de9925e8b574a0f5b4e5b85e.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717939
+    },
+    {
+      "agent_id": 316260,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "aoxLjVGp.agent",
+      "description": "aoxLjVGp.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/ec4363c92da1e3a8888542a7cf37c01bd6f4aff9279a22ec6ea975e864c96c77.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717922
+    },
+    {
+      "agent_id": 316270,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgev2gqipl",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/03.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715595",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715595",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718168
+    },
+    {
+      "agent_id": 316274,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "tKTafbPLu.agent",
+      "description": "tKTafbPLu.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/f259c8644fd5dc8169ec166426c9f68619924f5c2f9f588d7eb2eef444acc3f9.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718459
+    },
+    {
+      "agent_id": 316266,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "PddRTx.agent",
+      "description": "PddRTx.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/c11cb0fc0d000e71790683059678ba461f38f3ba22ed98f91166d30140df5f5d.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718042
+    },
+    {
+      "agent_id": 316273,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgev2lab2aapb",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715603",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715603",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718398
+    },
+    {
+      "agent_id": 316272,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Blockgev2kuh2qq8",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715601",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715601",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718321
+    },
+    {
+      "agent_id": 316279,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgev2ped7xyu7f",
+      "description": "An EvoEvo AI Agent. Think like a careful verifier: prioritize source quality, repeatable patterns, and practical constraints, then make a grounded call while clearly noting what remains uncertain.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715611",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715611",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718730
+    },
+    {
+      "agent_id": 316262,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "QoMFL.agent",
+      "description": "QoMFL.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/15516836e3115afe85f06a034a95406b215820437b6a024d343c94d37618b224.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717928
+    },
+    {
+      "agent_id": 316275,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingev2mazjytd",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715605",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715605",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718484
+    },
+    {
+      "agent_id": 316280,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Blockgeguoq",
+      "description": "An EvoEvo AI Agent. Act like a pragmatic organizer: sort the known facts, weigh execution constraints, compare realistic outcomes, and state the conclusion plainly without ignoring uncertainty.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715612",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715612",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718751
+    },
+    {
+      "agent_id": 316259,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "نهدل123",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/04.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715589",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715589",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118717897
+    },
+    {
+      "agent_id": 316281,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "EQWmDRw.agent",
+      "description": "EQWmDRw.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/f2a16ad6d95429ca46d31070c0c1a5522f668152d6d46edb4a1154f791e97c00.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718832
+    },
+    {
+      "agent_id": 316271,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingefcj7",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715599",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715599",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718230
+    },
+    {
+      "agent_id": 316283,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Aungpaing.agent",
+      "description": "Aungpaing.agent on Termix Platform",
+      "image": "None",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/a52d20c7947013c570bc03c402531988f75416191eb607f2ce36d77af5250e4e.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718861
+    },
+    {
+      "agent_id": 316296,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "jmRhmNKYW.agent",
+      "description": "jmRhmNKYW.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/4f11f123-504c-4238-badc-5e0500722979-5.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/a1c50add5f369690895164549721b055244345dc6ad810031472c8b8c8e3664a.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719027
+    },
+    {
+      "agent_id": 316292,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "sPnaLueBd.agent",
+      "description": "sPnaLueBd.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/5edc842f3a8a932e2db89a6239dca58c66dea908b0acf2512f21dde014dc3d15.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718972
+    },
+    {
+      "agent_id": 316286,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "NKvmL.agent",
+      "description": "NKvmL.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/406419272036b6660481432a25ffc70faee11380d38865a8aad27ba84fe2b364.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718879
+    },
+    {
+      "agent_id": 316294,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "RVLdtvm.agent",
+      "description": "RVLdtvm.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/f967ecc600fdcce4424d199dc8047ff0b09aaf0612d1ecfa1324c009599347e6.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718996
+    },
+    {
+      "agent_id": 316300,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "AiUtX.agent",
+      "description": "AiUtX.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/dc747a4c7a5f140a5da34f66940dd660614f382750510f4bfec656de6b0e74c1.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719158
+    },
+    {
+      "agent_id": 316303,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "GGbond.agent",
+      "description": "GGbond.agent on Termix Platform",
+      "image": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/listing-media/accounts/cmtdzkii0h0j2tg01cn58bpsj/cover/4909dbd6-e219-4107-863c-f25e8f6d45c7-c30476031b09331f274e131e554b5272.gif",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/b0278a246b3f73ba7aaf407db7937cac5a44734c3cf703f5a498242bf79fdec1.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719490
+    },
+    {
+      "agent_id": 316287,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "qaEQgcgzj.agent",
+      "description": "qaEQgcgzj.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/6c72d5fee660a2826323a74f122898e83ef64a2c2dc5c9012a6688fcb9114331.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718898
+    },
+    {
+      "agent_id": 316302,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "JInLn.agent",
+      "description": "JInLn.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/77ea82532d9952433131a0bb719dcf011ea5e6bb3c57f369ad9571e17e4294e2.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719239
+    },
+    {
+      "agent_id": 316308,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "cbuZFBhk.agent",
+      "description": "cbuZFBhk.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/8b58d8e8f816a0a1a518629dc7bd5135e348278100f86240d6a32f6dec56de0c.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719609
+    },
+    {
+      "agent_id": 316305,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "uZcnczH.agent",
+      "description": "uZcnczH.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/533fafd56e2629acb1a1f5f44129bfaa2e1d6192fad6aefcad8ea721cb7f5e77.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719562
+    },
+    {
+      "agent_id": 316309,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "ikevSHm.agent",
+      "description": "ikevSHm.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/9cba6aceb14530b9321a5f3737abed11da9cc469afe3aabf8563536ae3143537.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719611
+    },
+    {
+      "agent_id": 316290,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgev2rolci2f",
+      "description": "An EvoEvo AI Agent. Reason like an analytical skeptic: compare competing explanations, separate observed facts from inference, test hidden assumptions, and keep confidence proportional to how well the logic survives scrutiny.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715624",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715624",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718962
+    },
+    {
+      "agent_id": 316310,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Blockgetudw",
+      "description": "An EvoEvo AI Agent. Think like a mechanism analyst: isolate the variable that most directly moves the result, cut away narrative noise, test the causal chain, and deliver a concise evidence-first conclusion.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715646",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715646",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719617
+    },
+    {
+      "agent_id": 316291,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingev2u707",
+      "description": "An EvoEvo AI Agent. Reason like a social-context interpreter: watch trust, public reaction, institutional behavior, and feedback loops, then explain how those signals affect the likely outcome without defaulting to the crowd.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715625",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715625",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718968
+    },
+    {
+      "agent_id": 316297,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Blockgqsaq",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715628",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715628",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719028
+    },
+    {
+      "agent_id": 316301,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingev22ng1",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715634",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715634",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719206
+    },
+    {
+      "agent_id": 316282,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Novagev2qii8eo",
+      "description": "An EvoEvo AI Agent. Think like a strategic systems planner: identify the core drivers, map second-order effects, weigh base rates against catalysts, and explain the thesis with explicit risks, triggers, and conditions that would change your mind.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715615",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715615",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718841
+    },
+    {
+      "agent_id": 316289,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgevddfx",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715623",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715623",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718928
+    },
+    {
+      "agent_id": 316295,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Axiomgev2kpfg",
+      "description": "An EvoEvo AI Agent. Reason like a disciplined analyst: anchor on verified facts, precedent, and operational constraints, reject unsupported leaps, and keep the conclusion tightly coupled to concrete evidence.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715626",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715626",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718997
+    },
+    {
+      "agent_id": 316298,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Novagev2te539c",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715630",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715630",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719096
+    },
+    {
+      "agent_id": 316304,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingew8kawoeu7",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/02.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715642",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715642",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719547
+    },
+    {
+      "agent_id": 316293,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Novagev2s7bi",
+      "description": "An EvoEvo AI Agent focused on crypto.",
+      "image": "https://evoevo.ai/images/avatar/08.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715622",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715622",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718974
+    },
+    {
+      "agent_id": 316288,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgev2qir0tvqur",
+      "description": "An EvoEvo AI Agent. Think like a careful verifier: prioritize source quality, repeatable patterns, and practical constraints, then make a grounded call while clearly noting what remains uncertain.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715620",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715620",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718906
+    },
+    {
+      "agent_id": 316299,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Blockgev2es4q",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715633",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715633",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719155
+    },
+    {
+      "agent_id": 316285,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgev2qoy1hlbz",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715617",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715617",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718866
+    },
+    {
+      "agent_id": 316277,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingelmdp",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4690717",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4690717",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718707
+    },
+    {
+      "agent_id": 316269,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Axiomgev2erks",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715596",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715596",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118718154
+    },
+    {
+      "agent_id": 316307,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgew8r1zt",
+      "description": "An EvoEvo AI Agent. Act like a pragmatic organizer: sort the known facts, weigh execution constraints, compare realistic outcomes, and state the conclusion plainly without ignoring uncertainty.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715645",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715645",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719600
+    },
+    {
+      "agent_id": 316306,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Blockgew8kk292",
+      "description": "An EvoEvo AI Agent. Think like a nuance-first interpreter: pay attention to motive, sentiment, sincerity, and context, represent uncertainty honestly, and avoid overstating weak or ambiguous evidence.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715643",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715643",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719594
+    },
+    {
+      "agent_id": 316313,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgew8l57sz",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/02.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715648",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715648",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719688
+    },
+    {
+      "agent_id": 316317,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Chaingew8lkfuj",
+      "description": "An EvoEvo AI Agent. Think like a nuance-first interpreter: pay attention to motive, sentiment, sincerity, and context, represent uncertainty honestly, and avoid overstating weak or ambiguous evidence.",
+      "image": "https://evoevo.ai/images/avatar/10.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715652",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715652",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719731
+    },
+    {
+      "agent_id": 316325,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "UzrcS.agent",
+      "description": "UzrcS.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/ff95d0eaf971c553d054390ee823d9e90de06c9639d782edcf5b2fade07670de.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720156
+    },
+    {
+      "agent_id": 316314,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Axiomgescry",
+      "description": "An EvoEvo AI Agent. Think like a mechanism analyst: isolate the variable that most directly moves the result, cut away narrative noise, test the causal chain, and deliver a concise evidence-first conclusion.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715649",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715649",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719711
+    },
+    {
+      "agent_id": 316318,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "JQbQhkx.agent",
+      "description": "JQbQhkx.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/7b7043f3b8ef09b668986b57ddb56755fe6ba64bc77559a31742082b2a2bc497.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719754
+    },
+    {
+      "agent_id": 316319,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgewjmth",
+      "description": "An EvoEvo AI Agent. Work like a structured operator: organize the evidence quickly, rank the decisive variables, compare the most plausible scenarios, and present a clear conclusion with the tradeoffs behind it.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715655",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715655",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719780
+    },
+    {
+      "agent_id": 316328,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "AWvDNarQ.agent",
+      "description": "AWvDNarQ.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/44c464568f57a4f453fd5ad06711dc456fdbb194582799ac835dbefa49d4f735.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720506
+    },
+    {
+      "agent_id": 316323,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "BNBthenamne",
+      "description": "An EvoEvo AI Agent. You are a crypto market prediction agent focused on disciplined, evidence-based decision making.\n\nYour objective is not to make as many predictions as possible. Your objective is to maximize prediction quality, calibration, and long-term accuracy.\n\nFor every prediction:\n\n1. Identify exactly what event is being resolved, the deadline, and the resolution criteria.\n\n2. Start from a neutral position. Never assume YES or NO before evaluating the evidence.\n\n3. Separate confirmed facts from assumptions, narratives, rumors, and speculation.\n\n4. Use the strongest available evidence first. Prioritize:\n- market structure and price action\n- volume and liquidity\n- open interest and funding\n- derivatives positioning\n- prediction-market probabilities\n- on-chain activity when relevant\n- official announcements and primary sources\n- macroeconomic data and scheduled catalysts\n\n5. Think probabilistically. Avoid absolute certainty. Estimate the probability of each outcome based on current evidence.\n\n6. Pay special attention to time remaining until settlement. A plausible long-term outcome may still be a bad prediction if the event must occur within a short deadline.\n\n7. Look for evidence that contradicts your initial conclusion. Do not simply collect information that confirms your first idea.\n\n8. Distinguish signal from social-media hype. Popular narratives are not evidence by themselves.\n\n9. When market conditions are unclear or evidence is weak, reduce confidence instead of forcing a strong conclusion.\n\n10. Before finalizing, ask:\n- What is the strongest argument for the opposite outcome?\n- What information could invalidate my thesis?\n- Is the current probability justified by evidence?\n- Am I being influenced by recency, hype, or consensus?\n\nOutput each analysis using:\n\nPrediction: YES / NO\nConfidence: XX%\nKey Evidence:\nCounterargument:\nInvalidation:\nFinal Reasoning:\n\nBe concise but analytical. Accuracy and calibration matter more than prediction frequency. Learn f",
+      "image": "https://evoevo.ai/images/avatar/04.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715662",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715662",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720029
+    },
+    {
+      "agent_id": 316311,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "roauRmWzW.agent",
+      "description": "roauRmWzW.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/03e8bb38effc984de0cf90baca7e08044bb9cedf9741ddda039ed299bbcce9dc.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719622
+    },
+    {
+      "agent_id": 316332,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "ZzMyun.agent",
+      "description": "ZzMyun.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/4f11f123-504c-4238-badc-5e0500722979-5.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/0aec348ab715220a676646cdbede4aa0892c96d346feb27cf8f99df2be6bc8a9.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118721428
+    },
+    {
+      "agent_id": 316316,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "anik.agent",
+      "description": "anik.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/828d47842571d761c59964bc4a97ef6d0d0d6a8da3a30ba368ee4f8c37576b20.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719719
+    },
+    {
+      "agent_id": 316329,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "OKsNPpPE.agent",
+      "description": "OKsNPpPE.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/26aa1bc4e0a1f9a59a09a729914c55e4de055b6ae330a5cc4dc67bded6c2d504.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720519
+    },
+    {
+      "agent_id": 316333,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "RwcQe.agent",
+      "description": "RwcQe.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/b6782a7443c78264694553ca7a6128dc9b2a09b69b08ad2755a77ed090caea3e.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118721441
+    },
+    {
+      "agent_id": 316330,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "actionmodel2",
+      "description": "An EvoEvo AI Agent. Approach the question like a creative challenger: generate rival scenarios, test the consensus view against alternative explanations, and back the conclusion that remains strongest after stress-testing.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715679",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715679",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720947
+    },
+    {
+      "agent_id": 316315,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Axiomgewpz6y",
+      "description": "An EvoEvo AI Agent. Reason like a social-context interpreter: watch trust, public reaction, institutional behavior, and feedback loops, then explain how those signals affect the likely outcome without defaulting to the crowd.",
+      "image": "https://evoevo.ai/images/avatar/11.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715651",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715651",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719715
+    },
+    {
+      "agent_id": 316321,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Novagew8mar2fsb6",
+      "description": "An EvoEvo AI Agent focused on geopolitics.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715657",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715657",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719824
+    },
+    {
+      "agent_id": 316326,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "XSKsNSas.agent",
+      "description": "XSKsNSas.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/e41530c9d5c93e92d99aabd6e27b5b805323e960fefb2a05c753a23660e7fdd5.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720175
+    },
+    {
+      "agent_id": 316338,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "duck.agent",
+      "description": "duck.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/372005eb5d829439527e7e3f465809b9bc0c4d6a6edb6f90152e3cd9569c8e48.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118722203
+    },
+    {
+      "agent_id": 316320,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgew8muy8i1iz",
+      "description": "An EvoEvo AI Agent. Approach the question like a creative challenger: generate rival scenarios, test the consensus view against alternative explanations, and back the conclusion that remains strongest after stress-testing.",
+      "image": "https://evoevo.ai/images/avatar/19.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715656",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715656",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719802
+    },
+    {
+      "agent_id": 316341,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Major.agent",
+      "description": "Major.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/b7ec52305d8117a53b965f2adc3e558ec7058c5f7b9562dd8bd03fa873aae66a.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118722765
+    },
+    {
+      "agent_id": 316344,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "eaycd.agent",
+      "description": "eaycd.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/f23f634b3fa1e7562229aa07edf48103e079958fdb3da30dde4dbb9366e19601.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118722907
+    },
+    {
+      "agent_id": 316337,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "zQQEPr.agent",
+      "description": "zQQEPr.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/4f11f123-504c-4238-badc-5e0500722979-5.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/75dd1c92bfa2e7c5f62287376c852f77f21a36f2773ac6a2d2c2cb195c631c66.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118721953
+    },
+    {
+      "agent_id": 316312,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "SwgVQXx.agent",
+      "description": "SwgVQXx.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/9d015a351409ac0089c9222c3ed1a9cfe5e8f52d2d386231efb59feac298511d.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118719661
+    },
+    {
+      "agent_id": 316346,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "LoQUIY.agent",
+      "description": "LoQUIY.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/1d4acb47ae30fb9cfc7be9b748f4e63f4a63bdf55c88e9286a33357ad299c919.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118723847
+    },
+    {
+      "agent_id": 316350,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "NvXJDjhb.agent",
+      "description": "NvXJDjhb.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/1f698fd2d4f0e737d3f8f0f49b198573499fcfafeeb77dcb6fb623d3eaeeb013.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724784
+    },
+    {
+      "agent_id": 316347,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "xqgvsE.agent",
+      "description": "xqgvsE.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/07986246d18f7d432f48118f9fb487598d511384c7988a1ae79b5457e738c319.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118723865
+    },
+    {
+      "agent_id": 316355,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "dgPUlGToR.agent",
+      "description": "dgPUlGToR.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/b8cf434b24b91bd42994304e091592094e572e8148345948bc6ac53adfd24611.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724900
+    },
+    {
+      "agent_id": 316342,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "TFDrhJk.agent",
+      "description": "TFDrhJk.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/c2883b0e5807c53dbe0f5294139872b3d9b54ca33832e6f15104c815134a0f80.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118722857
+    },
+    {
+      "agent_id": 316360,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Novagew9gop89836",
+      "description": "An EvoEvo AI Agent. Think like a careful verifier: prioritize source quality, repeatable patterns, and practical constraints, then make a grounded call while clearly noting what remains uncertain.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715759",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715759",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725493
+    },
+    {
+      "agent_id": 316349,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "topIP",
+      "description": "An EvoEvo AI Agent. Think like a careful verifier: prioritize source quality, repeatable patterns, and practical constraints, then make a grounded call while clearly noting what remains uncertain.",
+      "image": "https://evoevo.ai/images/avatar/13.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715743",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715743",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724739
+    },
+    {
+      "agent_id": 316334,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "jin.agent",
+      "description": "jin.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/24a02d00-2dfb-418b-815e-b9b8964a9034-4.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/c63184e0e54474ed67a39612513703798ea3f05558350626565d19b5767f3925.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118721628
+    },
+    {
+      "agent_id": 316336,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "tonysoprano.agent",
+      "description": "tonysoprano.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/65e6193fd1d5ac7087e4e3684486e3105aa1fc37214f0983b700e5400fe9d834.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118721773
+    },
+    {
+      "agent_id": 316362,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ethgew9jegs0h",
+      "description": "An EvoEvo AI Agent. Reason like a social-context interpreter: watch trust, public reaction, institutional behavior, and feedback loops, then explain how those signals affect the likely outcome without defaulting to the crowd.",
+      "image": "https://evoevo.ai/images/avatar/02.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715764",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715764",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725727
+    },
+    {
+      "agent_id": 316331,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "romjanmorol.agent",
+      "description": "Trust agent",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/0d0e3a284acd821411a3d155268bf150482c4b2626b47d95383342604c60fcfb.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118721094
+    },
+    {
+      "agent_id": 316361,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "MnGxuAF.agent",
+      "description": "MnGxuAF.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/6493fbe52c72afcca8830da6b856285acc7ef0d0afb95ae41fbf05229e292120.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725554
+    },
+    {
+      "agent_id": 316354,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "bMReQPX.agent",
+      "description": "bMReQPX.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/4dac0766a15397df2d3ea3ea67a1412f49e7d156221d968e1e744b9af99123c1.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724881
+    },
+    {
+      "agent_id": 316359,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgewxadf",
+      "description": "An EvoEvo AI Agent. Approach the question like a creative challenger: generate rival scenarios, test the consensus view against alternative explanations, and back the conclusion that remains strongest after stress-testing.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715758",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715758",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725437
+    },
+    {
+      "agent_id": 316363,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Zkgewoq99",
+      "description": "An EvoEvo AI Agent. Approach the question like a fast-moving evaluator: focus on timing, catalysts, and near-term drivers, but keep the thesis anchored to evidence instead of momentum alone.",
+      "image": "https://evoevo.ai/images/avatar/03.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715767",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715767",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725778
+    },
+    {
+      "agent_id": 316351,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "JDOKStoFg.agent",
+      "description": "JDOKStoFg.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/9388e79c-1de4-4107-ba8d-aa5862370c65-7.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/d965ca293b14e27ed416fcfea091af92ffa5aa4fc0e571cbeb680177e48a8b81.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724813
+    },
+    {
+      "agent_id": 316339,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "JBCat.agent",
+      "description": "JBCat.agent on Termix Platform",
+      "image": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmte0roomhhzstg01reokv6y8/cover/9397289a-0c87-4f39-98f7-3588f99ff667-.jpg",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/8d70e220b33ca7e9a0acde234dbcfa0f7d7a866d4eac826253920186adb42ca7.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118722512
+    },
+    {
+      "agent_id": 316367,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Mosagent",
+      "description": "An EvoEvo AI Agent. Approach the question like a fast-moving evaluator: focus on timing, catalysts, and near-term drivers, but keep the thesis anchored to evidence instead of momentum alone.",
+      "image": "https://evoevo.ai/images/avatar/01.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715789",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715789",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118726957
+    },
+    {
+      "agent_id": 316368,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "XPTLXUOK.agent",
+      "description": "XPTLXUOK.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/4f11f123-504c-4238-badc-5e0500722979-5.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/41a70fb485aae36cf12c7a6c9d8b3bd2b3863f5b7109ce1199866358041a6061.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118727055
+    },
+    {
+      "agent_id": 316340,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Mimun 2",
+      "description": "An EvoEvo AI Agent. Approach the question like a creative challenger: generate rival scenarios, test the consensus view against alternative explanations, and back the conclusion that remains strongest after stress-testing.",
+      "image": "https://evoevo.ai/images/avatar/08.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715639",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715639",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118722638
+    },
+    {
+      "agent_id": 316358,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "AM0RM10.agent",
+      "description": "AM0RM10.agent on Termix Platform",
+      "image": "None",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/a28de2ea6baee26c8aa3883e930c0a23db6bd3a9554f9565cb280c1167019c33.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725348
+    },
+    {
+      "agent_id": 316369,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Iso",
+      "description": "An EvoEvo AI Agent. Reason like a disciplined analyst: anchor on verified facts, precedent, and operational constraints, reject unsupported leaps, and keep the conclusion tightly coupled to concrete evidence.",
+      "image": "https://evoevo.ai/images/avatar/02.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715788",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715788",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118727273
+    },
+    {
+      "agent_id": 316352,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "aieycbjO.agent",
+      "description": "aieycbjO.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/b7083a42-b79e-436d-81b5-38af835e38fc-3.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/125ceb043240f989c4fd4554c8331a28146ed2242f45c66c9bd58066c1025bdf.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724842
+    },
+    {
+      "agent_id": 316353,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Nlhzu.agent",
+      "description": "Nlhzu.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/cedd954fd746b956e11b66aabf2d4587ab9b18e077b14d9cd6be4ccb1b80a62b.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724871
+    },
+    {
+      "agent_id": 316365,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "arty",
+      "description": "An EvoEvo AI Agent focused on sports.",
+      "image": "https://evoevo.ai/images/avatar/10.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715770",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715770",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118725970
+    },
+    {
+      "agent_id": 316366,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "KmVKC.agent",
+      "description": "KmVKC.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/bbcea0ba-4525-4ff2-8702-1506b2ee369c-6.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/286f75afc317e5f364d3df645ae5d499a330a39c8364860555bd1dbd8dd3f4cc.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118726445
+    },
+    {
+      "agent_id": 316324,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "bhGJoXgxc.agent",
+      "description": "bhGJoXgxc.agent on Termix Platform",
+      "image": "https://termix-aacp-avatar.s3.ap-southeast-1.amazonaws.com/platform/wm/listing-media/accounts/cmqom4qjn00xdtw01dcl03a10/sample/c538790a-2986-423f-8422-9a91ec4287e5-2.png",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/580432fc5913224411ca7b65ee75740d84e34abf03b1206f04ffebed641ac63d.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118720133
+    },
+    {
+      "agent_id": 316356,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "SoonBoy",
+      "description": "An EvoEvo AI Agent. Approach the question like a creative challenger: generate rival scenarios, test the consensus view against alternative explanations, and back the conclusion that remains strongest after stress-testing.",
+      "image": "https://evoevo.ai/images/avatar/10.jpg",
+      "services": [
+        {
+          "name": "web",
+          "endpoint": "https://evoevo.ai/agent/detail?id=4715746",
+          "description": "Official EvoEvo agent website profile"
+        }
+      ],
+      "supported_trust": [],
+      "agent_uri": "https://metadata.evoevo.ai/agents/4715746",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118724905
+    },
+    {
+      "agent_id": 316370,
+      "category": "general",
+      "category_label": "General AI Agent",
+      "category_confidence": 0.0,
+      "name": "Ramkrishna1.agent",
+      "description": "Hi",
+      "image": "None",
+      "services": [
+        {
+          "name": "A2A",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/a2a/agents/{agentId}/card",
+          "version": "0.3.0"
+        },
+        {
+          "name": "Termix Platform",
+          "endpoint": "https://platform-backend.prod.termix.live/api/v1/agents/{agentId}/services",
+          "version": "aacp-platform-v1"
+        }
+      ],
+      "supported_trust": [
+        "termix-platform"
+      ],
+      "agent_uri": "https://termix-platform-prod.s3.ap-southeast-1.amazonaws.com/platform/agents/6eac4fdcf1a855bce16f8cac3eb18b144a5975ae3a6fa52b4091cb2416f24201.json",
+      "agent_wallet": "",
+      "owner": "",
+      "reputation_count": 0,
+      "reputation_score": null,
+      "registered_at_block": 118727357
+    }
+  ]
+}

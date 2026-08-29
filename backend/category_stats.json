@@ -1,0 +1,42 @@
+{
+  "scan_blocks": 9000,
+  "mints": 102,
+  "fetched": 69,
+  "categories": {
+    "Code & Smart Contracts": 34,
+    "Data & Research": 7,
+    "Design & Brand": 5,
+    "Automation & Ops": 5,
+    "Market & Protocol Research": 2
+  },
+  "tags": {
+    "AI Automation": 6,
+    "Ad Campaign": 6,
+    "3D Modeling": 4,
+    "Security Review": 2,
+    "AI Agent Development": 2,
+    "AI Trading": 2,
+    "Branding": 2,
+    "Agent Orchestration": 2,
+    "Data Extraction": 2,
+    "Crypto KOL": 2,
+    "Data Entry": 2,
+    "Wallet Security": 1,
+    "Anti-Phishing": 1,
+    "Backend Development": 1,
+    "API Development": 1,
+    "Alpha Hunter": 1,
+    "Technical Consulting": 1,
+    "UI Development": 1,
+    "Compliance & KYC": 1,
+    "Subgraph Development": 1,
+    "Market Research": 1,
+    "Web Research": 1,
+    "On-chain Analytics": 1,
+    "Data Analysis": 1,
+    "Technical Analysis": 1
+  },
+  "namespaces": {
+    "aacp-platform": 53
+  }
+}

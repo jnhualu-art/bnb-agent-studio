@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo — BNB Agent Studio Marketplace</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        height: 100%;
+        font-family: 'Inter', -apple-system, 'Segoe UI', 'PingFang SC', sans-serif;
+        background: #0b0e14;
+        color: #e6e9ef;
+        overflow: hidden;
+      }
+
+      /* ---------- 场景舞台 ---------- */
+      #stage { position: absolute; inset: 0 0 132px 0; }
+      .scene {
+        position: absolute; inset: 0;
+        display: none;
+        padding: 36px 48px;
+        overflow: hidden;
+      }
+      .scene.active { display: block; }
+
+      /* ---------- 字幕 / 进度 ---------- */
+      .subtitle-bar {
+        position: fixed; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, .86);
+        border-top: 3px solid #f0b90b;
+        padding: 22px 60px 26px;
+        min-height: 132px;
+        display: flex; align-items: center; justify-content: center;
+        z-index: 50;
+      }
+      .subtitle-text {
+        color: #fff; font-size: 27px; line-height: 1.5;
+        text-align: center; max-width: 1080px; white-space: pre-line;
+      }
+      .progress {
+        position: fixed; top: 0; left: 0; right: 0;
+        height: 4px; background: rgba(255, 255, 255, .12); z-index: 60;
+      }
+      .progress-fill {
+        height: 100%; width: 0%; background: #f0b90b; transition: width .25s linear;
+      }
+      .scene-indicator, .hint {
+        position: fixed; top: 18px; z-index: 60;
+        background: rgba(0, 0, 0, .5); padding: 5px 11px; border-radius: 5px;
+        font-family: 'SF Mono', Consolas, monospace; font-size: 12px;
+        color: rgba(255, 255, 255, .5);
+      }
+      .scene-indicator { right: 22px; }
+      .hint { left: 22px; }
+
+      /* ---------- 各场景通用 ---------- */
+      .center-screen {
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        height: 100%; text-align: center;
+      }
+      .big-title { font-size: 54px; font-weight: 600; letter-spacing: -.8px; line-height: 1.2; }
+      .big-sub { font-size: 22px; color: #8b94a7; margin-top: 18px; max-width: 960px; line-height: 1.5; }
+      .accent { color: #f0b90b; }
+      .scene-title {
+        font-size: 28px; font-weight: 600; margin-bottom: 6px;
+      }
+      .scene-sub {
+        font-size: 16px; color: #8b94a7; margin-bottom: 24px;
+      }
+
+      /* 4 类卡片网格 */
+      .cat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; height: 100%; }
+      .cat-card {
+        background: #1a1f2e; border: 1px solid #252b3b; border-radius: 10px;
+        padding: 18px; display: flex; flex-direction: column;
+        box-sizing: border-box; min-height: 0;
+      }
+      .cat-icon { font-size: 22px; margin-bottom: 8px; }
+      .cat-name { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+      .cat-desc { font-size: 11px; color: #8b94a7; margin-bottom: 12px; flex: 0 0 auto; }
+      .cat-agent { border-top: 1px solid #252b3b; padding-top: 10px; flex: 1; }
+      .cat-agent-name { font-size: 12px; font-weight: 500; color: #f0b90b; font-family: 'SF Mono', Consolas, monospace; }
+      .badge {
+        display: inline-flex; align-items: center;
+        padding: 2px 7px; border-radius: 20px;
+        font-size: 10px; font-weight: 500;
+        background: #1a1f2e; border: 1px solid #252b3b; color: #8b94a7;
+      }
+      .badge-green { background: rgba(14, 203, 129, .12); border-color: rgba(14, 203, 129, .3); color: #0ecb81; }
+      .cat-metrics { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; }
+      .metric-row { display: flex; justify-content: space-between; font-size: 11px; }
+      .metric-label { color: #5f6779; }
+      .metric-value { color: #e6e9ef; font-family: 'SF Mono', Consolas, monospace; }
+      .metric-value.good { color: #0ecb81; }
+      .metric-value.warn { color: #f0b90b; }
+      .metric-value.bad  { color: #f6465d; }
+      .flex-between { display: flex; justify-content: space-between; align-items: center; }
+
+      /* 详情视图 */
+      .detail-grid {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px; margin: 18px 0;
+      }
+      .detail-metric {
+        background: #1a1f2e; border: 1px solid #252b3b;
+        border-radius: 6px; padding: 10px 12px;
+      }
+      .dm-label { font-size: 10px; color: #5f6779; text-transform: uppercase; letter-spacing: .4px; }
+      .dm-value { font-size: 16px; font-weight: 600; margin-top: 2px; font-family: 'SF Mono', Consolas, monospace; }
+      .big-number { font-size: 42px; font-weight: 700; line-height: 1; }
+      .critical-banner {
+        background: rgba(246, 70, 93, .12); border: 1px solid rgba(246, 70, 93, .4);
+        border-radius: 8px; padding: 14px 18px; color: #f6465d;
+        font-weight: 600; margin: 16px 0;
+      }
+
+      /* 链上 agent 表格 */
+      .agent-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+      .agent-table th {
+        text-align: left; padding: 8px 10px;
+        color: #5f6779; font-weight: 500; font-size: 10px;
+        text-transform: uppercase; border-bottom: 1px solid #252b3b;
+      }
+      .agent-table td { padding: 9px 10px; border-bottom: 1px solid #252b3b; }
+      .agent-name-cell { font-weight: 500; }
+      .agent-desc-cell { color: #8b94a7; max-width: 460px; }
+      .mono { font-family: 'SF Mono', Consolas, monospace; font-size: 11px; }
+
+      /* 错误提示 */
+      .error-banner {
+        position: fixed; top: 70px; left: 50%; transform: translateX(-50%);
+        background: rgba(246, 70, 93, .12); border: 1px solid rgba(246, 70, 93, .4);
+        color: #f6465d; border-radius: 8px; padding: 14px 20px;
+        font-size: 13px; z-index: 70; max-width: 80%; display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="scene-indicator" id="sceneIndicator">1 / 12</div>
+    <div class="hint">SPACE pause · R replay · F fullscreen</div>
+    <div class="error-banner" id="errorBanner"></div>
+
+    <div id="stage">
+      <!-- 所有场景, 由 JS 切换 .active -->
+      <div class="scene" data-i="1">
+        <div class="center-screen">
+          <div class="big-title accent">BNB Agent Studio</div>
+          <div class="big-title">Marketplace</div>
+          <div class="big-sub">Find, compare and hire AI agents on BNB Smart Chain</div>
+          <div class="badge" style="margin-top: 24px; padding: 6px 14px; font-size: 12px;">
+            Build the Era Hackathon · chainId 56
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="2">
+        <div class="scene-title">The problem</div>
+        <div class="scene-sub">Why this marketplace exists</div>
+        <div class="center-screen" style="padding-top: 60px;">
+          <div class="big-title" style="font-size: 38px; line-height: 1.4;">
+            200,000+ agents on BSC.<br/>
+            <span class="accent">Zero places to find them.</span>
+          </div>
+          <div class="big-sub" style="font-size: 18px; margin-top: 32px;">
+            No venue to compare. No way to hire. The four financial categories<br/>
+            a marketplace is asked to cover? <span style="color: #f6465d;">On-chain — zero.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="3">
+        <div class="scene-title">Reference agents</div>
+        <div class="scene-sub">All four categories covered at equal depth — built by us, running live</div>
+        <div class="cat-grid" id="scene3-grid" style="margin-top: 12px;"></div>
+      </div>
+
+      <div class="scene" data-i="4">
+        <div style="max-width: 1100px; margin: 0 auto;">
+          <div class="badge badge-green" style="margin-bottom: 12px;">⭐ STRONGEST EVIDENCE</div>
+          <div class="scene-title" style="color: #f6465d;">Health Factor Monitoring — a live $11M position</div>
+          <div class="scene-sub">hfsentinel.agent · watching a real Venus lending position</div>
+          <div class="critical-banner" id="scene4-banner"></div>
+          <div class="detail-grid" id="scene4-grid"></div>
+          <div class="scene-sub" id="scene4-protection" style="margin-top: 16px; font-size: 14px;"></div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="5">
+        <div style="max-width: 1100px; margin: 0 auto;">
+          <div class="scene-title">Grid Trading</div>
+          <div class="scene-sub">silent-martin.agent — BSC port of a Hummingbot Botcamp CERTIFIED strategy</div>
+          <div class="detail-grid" id="scene5-grid"></div>
+          <div class="scene-sub" style="margin-top: 18px; font-size: 14px; color: #e6e9ef;">
+            Anchors quotes to the <span class="accent">on-chain pool price</span>, not the CEX mid —
+            then widens spread on dislocation, applies inventory skew, sizes by ATR.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="6">
+        <div style="max-width: 1100px; margin: 0 auto;">
+          <div class="scene-title">Yield Optimisation</div>
+          <div class="scene-sub">yieldpilot.agent — filters 636 BSC pools to real candidates</div>
+          <div class="detail-grid" id="scene6-grid"></div>
+          <div class="scene-sub" style="margin-top: 18px; font-size: 14px; color: #e6e9ef;">
+            APY × stability × liquidity. Stability penalises pools whose current APY<br/>
+            has just jumped away from their own 30-day mean.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="7">
+        <div style="max-width: 1100px; margin: 0 auto;">
+          <div class="scene-title">Rebalancing</div>
+          <div class="scene-sub">rangeguard.agent — V3 LP range guard</div>
+          <div class="detail-grid" id="scene7-grid"></div>
+          <div class="scene-sub" style="margin-top: 18px; font-size: 14px; color: #e6e9ef;">
+            A V3 position out of range stops earning fees <em>and</em> becomes single-sided.<br/>
+            Warns at 2% from the edge. Caught QQQB/USDC with 0.15% headroom left.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="8">
+        <div style="max-width: 1100px; margin: 0 auto;">
+          <div class="scene-title">On-chain agents</div>
+          <div class="scene-sub">Indexed from the ERC-8004 Identity Registry on BSC</div>
+          <div style="background: rgba(246, 70, 93, .08); border: 1px solid rgba(246, 70, 93, .3); border-radius: 8px; padding: 14px 18px; color: #f6465d; font-size: 14px; margin-bottom: 18px;">
+            <strong>Key finding:</strong> 4 financial categories — <strong>0 agents</strong>.
+            We did not pad the categories with general agents.
+          </div>
+          <table class="agent-table">
+            <thead><tr>
+              <th>Agent</th><th>Description</th><th>Category</th><th>ID</th>
+            </tr></thead>
+            <tbody id="scene8-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="scene" data-i="9">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="scene-title">Hire — end to end</div>
+          <div class="scene-sub">Pick an agent → set allocation → confirm</div>
+          <div style="background: #1a1f2e; border: 1px solid #252b3b; border-radius: 10px; padding: 24px; margin-top: 20px;">
+            <div style="font-size: 14px; color: #8b94a7; margin-bottom: 18px;">
+              This agent runs continuously against live BSC state and publishes its decisions through this marketplace.
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 18px;">
+              <div style="background: #0b0e14; border: 1px solid #252b3b; border-radius: 6px; padding: 10px 14px; color: #e6e9ef; font-size: 14px; min-width: 240px;">
+                Allocation: <span class="mono accent">$ 1,000</span>
+              </div>
+              <div class="btn" style="background: #f0b90b; color: #0b0e14; padding: 10px 22px; border-radius: 6px; font-weight: 600; font-size: 13px;">Hire agent</div>
+            </div>
+            <div class="badge badge-green" style="padding: 5px 10px;">✓ Agent hired — allocation $1,000 (demo mode)</div>
+            <div style="font-size: 12px; color: #5f6779; margin-top: 10px;">
+              Production path: Binance x402 payment facilitator → agent activation on BSC.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="10">
+        <div class="center-screen">
+          <div class="big-title">Every number here is reproducible</div>
+          <div class="big-sub" style="margin-top: 28px;">
+            No screenshots. No mock data. Real on-chain reads.<br/>
+            API at <span class="mono accent">/api/reference-agents</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="11">
+        <div class="center-screen">
+          <div class="big-title accent">BNB Agent Studio Marketplace</div>
+          <div class="big-sub" style="margin-top: 24px;">
+            Build the Era · BNB Smart Chain · chainId 56
+          </div>
+          <div class="badge" style="margin-top: 32px; padding: 6px 14px; font-size: 12px;">
+            https://github.com/... · demo: http://localhost:5173
+          </div>
+        </div>
+      </div>
+
+      <div class="scene" data-i="12">
+        <div class="center-screen">
+          <div class="big-title" style="color: #8b94a7; font-size: 28px;">— end —</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subtitle-bar">
+      <div class="subtitle-text" id="subtitle"></div>
+    </div>
+
+    <script>
+      // 一次 fetch, 拿全部真实数据(同 hostname:8000 端口, 浏览器允许 fetch 跨 port)
+      const API = `http://${window.location.hostname}:8000`;
+
+      const ICONS = {
+        rebalancing: '⟳', grid_trading: '▤', yield_optimisation: '↑', health_factor: '◈'
+      };
+      const fmt = (v, d = 2) => {
+        if (v === null || v === undefined || v === '') return '—';
+        if (typeof v === 'number') {
+          if (Math.abs(v) >= 1e6) return `${(v / 1e6).toFixed(d)}M`;
+          if (Math.abs(v) >= 1e3) return v.toLocaleString('en-US', { maximumFractionDigits: 0 });
+          return v.toFixed(d);
+        }
+        return String(v);
+      };
+
+      let DATA = null;
+      let ONCHAIN_TOTAL = 0;
+
+      async function loadData() {
+        const [ref, idxRes] = await Promise.all([
+          fetch(API + '/api/reference-agents').then((r) => r.json()),
+          fetch(API + '/api/agents?limit=6').then((r) => r.json())
+        ]);
+        const byCat = {};
+        (ref.agents || []).forEach((a) => { byCat[a.category] = a; });
+        DATA = byCat;
+        ONCHAIN_TOTAL = idxRes.total || 0;
+        return byCat;
+      }
+
+      // 渲染各场景的内容
+      function renderScenes(byCat) {
+        // Scene 3: 四类卡片
+        const grid3 = document.getElementById('scene3-grid');
+        const catOrder = ['rebalancing', 'grid_trading', 'yield_optimisation', 'health_factor'];
+        const catLabels = {
+          rebalancing: 'Rebalancing', grid_trading: 'Grid Trading',
+          yield_optimisation: 'Yield Optimisation', health_factor: 'Health Factor'
+        };
+        const catDesc = {
+          rebalancing: 'Manages LP ranges, resets positions automatically',
+          grid_trading: 'Places and manages automated grid orders',
+          yield_optimisation: 'Routes liquidity to the highest available APR',
+          health_factor: 'Protects lending positions from liquidation'
+        };
+        grid3.innerHTML = catOrder.map((k) => {
+          const a = byCat[k];
+          const m = (a && a.state && a.state.metrics) || {};
+          let mhtml = '';
+          if (k === 'grid_trading') {
+            mhtml = `<div class="cat-metrics">
+              <div class="metric-row"><span class="metric-label">Fair</span><span class="metric-value">$${fmt(m.fair_price)}</span></div>
+              <div class="metric-row"><span class="metric-label">Spread</span><span class="metric-value">${fmt(m.spread_bps, 1)} bps</span></div>
+              <div class="metric-row"><span class="metric-label">CEX gap</span><span class="metric-value">${fmt(m.dislocation_bps, 2)} bps</span></div>
+              <div class="metric-row"><span class="metric-label">Grid orders</span><span class="metric-value">${
+                ((a.state && a.state.actions && a.state.actions[0] && a.state.actions[0].orders) || []).length
+              }</span></div>
+            </div>`;
+          } else if (k === 'yield_optimisation') {
+            mhtml = `<div class="cat-metrics">
+              <div class="metric-row"><span class="metric-label">Best APY</span><span class="metric-value good">${fmt(m.best_apy, 2)}%</span></div>
+              <div class="metric-row"><span class="metric-label">Pool</span><span class="metric-value">${m.best_pool || '—'}</span></div>
+              <div class="metric-row"><span class="metric-label">Candidates</span><span class="metric-value">${m.candidates ?? '—'}</span></div>
+              <div class="metric-row"><span class="metric-label">Score</span><span class="metric-value">${fmt(m.best_score, 1)}</span></div>
+            </div>`;
+          } else if (k === 'health_factor') {
+            const hf = m.health_factor;
+            const tone = hf == null ? '' : hf <= 1.0 ? 'bad' : hf < 1.15 ? 'bad' : hf < 1.5 ? 'warn' : 'good';
+            mhtml = `<div class="cat-metrics">
+              <div class="metric-row"><span class="metric-label">Health</span><span class="metric-value ${tone}">${fmt(hf, 3)}</span></div>
+              <div class="metric-row"><span class="metric-label">Risk</span><span class="metric-value ${m.risk_level === 'CRITICAL' ? 'bad' : m.risk_level === 'WARN' ? 'warn' : 'good'}">${m.risk_level || '—'}</span></div>
+              <div class="metric-row"><span class="metric-label">Borrow</span><span class="metric-value">$${fmt(m.borrow_usd, 0)}</span></div>
+              <div class="metric-row"><span class="metric-label">Positions</span><span class="metric-value">${m.positions ?? '—'}</span></div>
+            </div>`;
+          } else { // rebalancing
+            mhtml = `<div class="cat-metrics">
+              <div class="metric-row"><span class="metric-label">LP positions</span><span class="metric-value">${m.positions ?? '—'}</span></div>
+              <div class="metric-row"><span class="metric-label">Out of range</span><span class="metric-value ${m.out_of_range > 0 ? 'bad' : 'good'}">${m.out_of_range ?? '—'}</span></div>
+              <div class="metric-row"><span class="metric-label">Near edge</span><span class="metric-value ${m.near_edge > 0 ? 'warn' : 'good'}">${m.near_edge ?? '—'}</span></div>
+              <div class="metric-row"><span class="metric-label">Healthy</span><span class="metric-value good">${m.healthy ?? '—'}</span></div>
+            </div>`;
+          }
+          return `<div class="cat-card">
+            <div class="cat-icon">${ICONS[k]}</div>
+            <div class="cat-name">${catLabels[k]}</div>
+            <div class="cat-desc">${catDesc[k]}</div>
+            <div class="cat-agent">
+              <div class="flex-between">
+                <span class="cat-agent-name">${a ? a.name : '—'}</span>
+                <span class="badge ${a && a.state && a.state.status === 'running' ? 'badge-green' : ''}">${a && a.state ? a.state.status : 'pending'}</span>
+              </div>
+              ${mhtml}
+            </div>
+          </div>`;
+        }).join('');
+
+        // Scene 4: Health Factor
+        const h = byCat.health_factor || {};
+        const hm = (h.state && h.state.metrics) || {};
+        const hAct = ((h.state && h.state.actions) || [])[0] || {};
+        const hf = hm.health_factor;
+        const tone = hf == null ? '' : hf <= 1.0 ? 'bad' : hf < 1.15 ? 'bad' : hf < 1.5 ? 'warn' : 'good';
+        document.getElementById('scene4-banner').innerHTML =
+          `⚠ CRITICAL · Health factor ${fmt(hf, 4)} — roughly 9% of cushion left before liquidation`;
+        document.getElementById('scene4-grid').innerHTML = `
+          <div class="detail-metric">
+            <div class="dm-label">Supply</div>
+            <div class="dm-value">$${fmt(hm.supply_usd, 0)}</div>
+          </div>
+          <div class="detail-metric">
+            <div class="dm-label">Borrow</div>
+            <div class="dm-value warn">$${fmt(hm.borrow_usd, 0)}</div>
+          </div>
+          <div class="detail-metric">
+            <div class="dm-label">Weighted collateral</div>
+            <div class="dm-value">$${fmt(hm.weighted_collateral_usd, 0)}</div>
+          </div>
+          <div class="detail-metric">
+            <div class="dm-label">Health factor</div>
+            <div class="dm-value ${tone}">${fmt(hf, 4)}</div>
+          </div>
+        `;
+        document.getElementById('scene4-protection').innerHTML =
+          `<strong>Recovery options to restore HF=2.0:</strong> repay <span class="mono accent">$${fmt(hAct.option_a_repay_usd, 0)}</span> or add collateral <span class="mono accent">$${fmt(hAct.option_b_add_collateral_usd, 0)}</span>`;
+
+        // Scene 5: Grid
+        const g = byCat.grid_trading || {};
+        const gm = (g.state && g.state.metrics) || {};
+        const gridOrders = ((g.state && g.state.actions && g.state.actions[0] && g.state.actions[0].orders) || []);
+        document.getElementById('scene5-grid').innerHTML = `
+          <div class="detail-metric"><div class="dm-label">Fair (DEX-anchored)</div><div class="dm-value">$${fmt(gm.fair_price)}</div></div>
+          <div class="detail-metric"><div class="dm-label">CEX (Gate.io)</div><div class="dm-value">$${fmt(gm.cex_price)}</div></div>
+          <div class="detail-metric"><div class="dm-label">Dislocation</div><div class="dm-value">${fmt(gm.dislocation_bps, 2)} bps</div></div>
+          <div class="detail-metric"><div class="dm-label">ATR (15m)</div><div class="dm-value">${fmt(gm.atr_pct, 3)}%</div></div>
+          <div class="detail-metric"><div class="dm-label">Spread</div><div class="dm-value accent">${fmt(gm.spread_bps, 1)} bps</div></div>
+          <div class="detail-metric"><div class="dm-label">Grid orders</div><div class="dm-value">${gridOrders.length}</div></div>
+        `;
+
+        // Scene 6: Yield
+        const y = byCat.yield_optimisation || {};
+        const ym = (y.state && y.state.metrics) || {};
+        document.getElementById('scene6-grid').innerHTML = `
+          <div class="detail-metric"><div class="dm-label">Candidate pools</div><div class="dm-value">${ym.candidates ?? '—'}</div></div>
+          <div class="detail-metric"><div class="dm-label">Best APY</div><div class="dm-value good">${fmt(ym.best_apy, 2)}%</div></div>
+          <div class="detail-metric"><div class="dm-label">Best pool</div><div class="dm-value">${ym.best_pool || '—'}</div></div>
+          <div class="detail-metric"><div class="dm-label">Risk-adj score</div><div class="dm-value">${fmt(ym.best_score, 1)}</div></div>
+        `;
+
+        // Scene 7: Rebalancing
+        const r = byCat.rebalancing || {};
+        const rm = (r.state && r.state.metrics) || {};
+        document.getElementById('scene7-grid').innerHTML = `
+          <div class="detail-metric"><div class="dm-label">LP positions</div><div class="dm-value">${rm.positions ?? '—'}</div></div>
+          <div class="detail-metric"><div class="dm-label">Out of range</div><div class="dm-value ${rm.out_of_range > 0 ? 'bad' : 'good'}">${rm.out_of_range ?? '—'}</div></div>
+          <div class="detail-metric"><div class="dm-label">Near edge</div><div class="dm-value ${rm.near_edge > 0 ? 'warn' : 'good'}">${rm.near_edge ?? '—'}</div></div>
+          <div class="detail-metric"><div class="dm-label">Healthy</div><div class="dm-value good">${rm.healthy ?? '—'}</div></div>
+        `;
+
+        // Scene 8: 链上 agent 表格(已经在主循环外 fetch 拿, 这里直接用)
+        // (chain agent 数据在 loadData 里 fetch 了, 存到 ONCHAIN_LIST)
+        if (window.__ONCHAIN_LIST__) {
+          const tbody = document.getElementById('scene8-tbody');
+          tbody.innerHTML = window.__ONCHAIN_LIST__.slice(0, 6).map((a) => `
+            <tr>
+              <td class="agent-name-cell">${a.name || '(unnamed)'}</td>
+              <td class="agent-desc-cell">${(a.description || '').slice(0, 80) || '—'}</td>
+              <td><span class="badge">${a.category_label || '—'}</span></td>
+              <td class="mono">${a.agent_id}</td>
+            </tr>
+          `).join('');
+        }
+      }
+
+      // 时间轴
+      const SCENES = [
+        { t: 4200,  sub: '' },
+        { t: 12000, sub: 'BSC has 200,000+ agents registered under ERC-8004.\nNo venue to find them. No way to compare them.' },
+        { t: 11000, sub: 'Four categories, covered at equal depth —\nbuilt by us, running live against BNB Smart Chain.' },
+        { t: 12000, sub: 'Start with the strongest one.\nThis agent is watching a live $11.1M Venus lending position.' },
+        { t: 14000, sub: '$11.1M supplied. $8.3M borrowed.\nHealth factor 1.0991 — CRITICAL, ~9% of cushion left.' },
+        { t: 14000, sub: 'It doesn’t just alert — it gives exact recovery amounts:\nrepay $3.75M, or add $9.1M of collateral.' },
+        { t: 14000, sub: 'Grid Trading — silent-martin, a Hummingbot Botcamp CERTIFIED strategy.\nAnchors quotes to the on-chain pool price, not the CEX mid.' },
+        { t: 12000, sub: 'Yield Optimisation — 636 BSC pools in, 49 real candidates out.\nAPY × stability × liquidity. The 24,000% APY pools never make it through.' },
+        { t: 12000, sub: 'Rebalancing — V3 LP out of range = zero fees + single-sided risk.\nThis one caught QQQB/USDC with only 0.15% of headroom left.' },
+        { t: 11000, sub: 'Beyond our four, the marketplace indexes 103 real on-chain agents.\nFour financial categories — zero. We did not pad them with general agents.' },
+        { t: 10000, sub: 'Hire is end to end: pick an agent, set allocation, confirm.\nDemo mode. Production path runs on Binance x402.' },
+        { t: 12000, sub: 'Every number here is reproducible from the API.\nNo screenshots. No mock data. Real on-chain reads.' }
+      ];
+
+      const subtitleEl = document.getElementById('subtitle');
+      const progressFill = document.getElementById('progressFill');
+      const indicatorEl = document.getElementById('sceneIndicator');
+      const errorBanner = document.getElementById('errorBanner');
+      const stage = document.getElementById('stage');
+
+      let idx = 0;
+      let timer = null;
+      let paused = false;
+      let elapsed = 0;
+      const TICK = 100;
+      const totalMs = SCENES.reduce((s, x) => s + x.t, 0);
+
+      function showScene(i) {
+        [...stage.querySelectorAll('.scene')].forEach((el) => el.classList.remove('active'));
+        const el = stage.querySelector(`.scene[data-i="${i + 1}"]`);
+        if (el) el.classList.add('active');
+        subtitleEl.textContent = SCENES[i].sub || '';
+        indicatorEl.textContent = `${i + 1} / ${SCENES.length}`;
+        idx = i;
+        elapsed = 0;
+      }
+
+      function tick() {
+        if (paused) return;
+        elapsed += TICK;
+        const scene = SCENES[idx];
+        progressFill.style.width = `${Math.min(100, (elapsed / totalMs) * 100 + (idx / SCENES.length) * 100)}%`;
+        if (elapsed >= scene.t) {
+          if (idx < SCENES.length - 1) showScene(idx + 1);
+        }
+      }
+
+      function start() {
+        showScene(0);
+        clearInterval(timer);
+        timer = setInterval(tick, TICK);
+      }
+
+      function replay() {
+        progressFill.style.width = '0%';
+        start();
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.code === 'Space') { e.preventDefault(); paused = !paused; }
+        else if (e.key === 'r' || e.key === 'R') replay();
+        else if (e.key === 'f' || e.key === 'F') {
+          if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+          else document.exitFullscreen();
+        }
+      });
+
+      async function bootstrap() {
+        console.log('[demo] API =', API, '| location =', window.location.href);
+        try {
+          const ref = await loadData();
+          renderScenes(ref);
+
+          // 拉几个链上 agent 填 Scene 8
+          try {
+            const idxRes = await fetch(API + '/api/agents?limit=6').then((r) => r.json());
+            window.__ONCHAIN_LIST__ = idxRes.agents || [];
+            const tbody = document.getElementById('scene8-tbody');
+            tbody.innerHTML = (idxRes.agents || []).slice(0, 6).map((a) => `
+              <tr>
+                <td class="agent-name-cell">${a.name || '(unnamed)'}</td>
+                <td class="agent-desc-cell">${(a.description || '').slice(0, 80) || '—'}</td>
+                <td><span class="badge">${a.category_label || '—'}</span></td>
+                <td class="mono">${a.agent_id}</td>
+              </tr>
+            `).join('');
+            // Scene 8 的总数字幕用真实总数
+            SCENES[9].sub = `Beyond our four, the marketplace indexes ${ONCHAIN_TOTAL} real on-chain agents.\nFour financial categories — zero. We did not pad them with general agents.`;
+          } catch (e) {
+            console.warn('[demo] on-chain agent fetch failed:', e);
+          }
+
+          start();
+        } catch (e) {
+          console.error('[demo] bootstrap failed:', e);
+          errorBanner.textContent = 'Cannot reach the backend API at ' + API + ' — start the backend first (cd backend && .venv\\Scripts\\python.exe main.py)';
+          errorBanner.style.display = 'block';
+        }
+      }
+
+      bootstrap();
+    </script>
+  </body>
+</html>

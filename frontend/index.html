@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BNB Agent Studio Marketplace</title>
+    <meta
+      name="description"
+      content="Discover, compare and hire AI agents on BNB Smart Chain"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- 零构建: 直接用浏览器原生 ESM + 本地 Vue 运行时(含模板编译器) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "/vendor/vue.esm-browser.js"
+        }
+      }
+    </script>
+
+    <script>
+      // 后端 FastAPI 地址(部署时改这里即可)
+      window.__API_BASE__ = 'http://127.0.0.1:8000/api'
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
