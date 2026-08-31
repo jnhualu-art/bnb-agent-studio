@@ -1,0 +1,186 @@
+{
+  "total": 4,
+  "refresh_interval_sec": 300,
+  "last_refresh": 1788163151.424965,
+  "agents": [
+    {
+      "name": "silent-martin.agent",
+      "category": "grid_trading",
+      "category_label": "Grid Trading",
+      "description": "Places and manages automated grid orders",
+      "network": "mainnet",
+      "dry_run": true,
+      "state": {
+        "cycle": 1,
+        "timestamp": "2026-08-31T07:58:27.955372+00:00",
+        "status": "running",
+        "kill_switch_active": false,
+        "data_age_sec": 3.9397404193878174,
+        "error_count": 0,
+        "metrics": {
+          "fair_price": 686.94741,
+          "dex_price": 686.94741,
+          "cex_price": 687.0,
+          "dislocation_bps": 0.77,
+          "atr_pct": 0.1944,
+          "spread_bps": 38.89,
+          "inventory_ratio": 0.5,
+          "target_ratio": 0.5,
+          "skew_bps": 0.0,
+          "bid": 685.611798,
+          "ask": 688.283022,
+          "pool": "0x6fe9E9de56356F7eDBfcBB29FAB7cd69471a4869"
+        },
+        "actions": [
+          {
+            "type": "QUOTE",
+            "orders": [
+              {
+                "side": "BUY",
+                "level": 1,
+                "price": 684.278782,
+                "size": 500.0
+              },
+              {
+                "side": "SELL",
+                "level": 1,
+                "price": 689.62123,
+                "size": 500.0
+              },
+              {
+                "side": "BUY",
+                "level": 2,
+                "price": 682.945767,
+                "size": 250.0
+              },
+              {
+                "side": "SELL",
+                "level": 2,
+                "price": 690.959439,
+                "size": 250.0
+              },
+              {
+                "side": "BUY",
+                "level": 3,
+                "price": 681.612752,
+                "size": 166.6667
+              },
+              {
+                "side": "SELL",
+                "level": 3,
+                "price": 692.297648,
+                "size": 166.6667
+              }
+            ],
+            "dry_run": true
+          }
+        ],
+        "notes": "quoting 6 grid orders, spread 38.9bps"
+      },
+      "history_size": 1
+    },
+    {
+      "name": "yieldpilot.agent",
+      "category": "yield_optimisation",
+      "category_label": "Yield Optimisation",
+      "description": "Routes liquidity to the highest available APR",
+      "network": "mainnet",
+      "dry_run": true,
+      "state": {
+        "cycle": 1,
+        "timestamp": "2026-08-31T07:58:31.895525+00:00",
+        "status": "running",
+        "kill_switch_active": false,
+        "data_age_sec": 1.6689300537109375e-05,
+        "error_count": 0,
+        "metrics": {
+          "candidates": 50,
+          "best_pool": "USDT-WBNB",
+          "best_project": "uniswap-v3",
+          "best_apy": 56.29,
+          "best_score": 50.103,
+          "current_pool": null,
+          "current_apy": null
+        },
+        "actions": [
+          {
+            "type": "ENTER",
+            "pool_id": "f52993c8-fdad-40cb-adde-797b383034c5",
+            "symbol": "USDT-WBNB",
+            "project": "uniswap-v3",
+            "expected_apy": 56.29,
+            "dry_run": true
+          }
+        ],
+        "notes": "no current position -> recommend entering best pool"
+      },
+      "history_size": 1
+    },
+    {
+      "name": "hfsentinel.agent",
+      "category": "health_factor",
+      "category_label": "Health Factor Monitoring",
+      "description": "Protects lending positions from liquidation",
+      "network": "mainnet",
+      "dry_run": true,
+      "state": {
+        "cycle": 1,
+        "timestamp": "2026-08-31T07:58:43.176865+00:00",
+        "status": "running",
+        "kill_switch_active": false,
+        "data_age_sec": 3.0040740966796875e-05,
+        "error_count": 0,
+        "metrics": {
+          "positions": 4,
+          "health_factor": 1.0836,
+          "risk_level": "CRITICAL",
+          "monitored": "0x81EBde24453B8E40454616579EA79C79A197699D",
+          "supply_usd": 11599295.73,
+          "borrow_usd": 8831529.6,
+          "weighted_collateral_usd": 9569418.98
+        },
+        "actions": [
+          {
+            "type": "PROTECT",
+            "level": "CRITICAL",
+            "current_hf": 1.0836,
+            "target_hf": 2.0,
+            "option_a_repay_usd": 4046820.11,
+            "option_b_add_collateral_usd": 9810473.0,
+            "dry_run": true
+          }
+        ],
+        "notes": "HF 1.084 < 1.15 -> urgent"
+      },
+      "history_size": 1
+    },
+    {
+      "name": "rangeguard.agent",
+      "category": "rebalancing",
+      "category_label": "Rebalancing",
+      "description": "Manages LP ranges, resets positions automatically",
+      "network": "mainnet",
+      "dry_run": true,
+      "state": {
+        "cycle": 1,
+        "timestamp": "2026-08-31T07:59:03.886949+00:00",
+        "status": "running",
+        "kill_switch_active": false,
+        "data_age_sec": 3.3855438232421875e-05,
+        "error_count": 0,
+        "metrics": {
+          "positions": 1,
+          "out_of_range": 0,
+          "near_edge": 0,
+          "healthy": 1,
+          "pairs": [
+            "ASTER/USDT"
+          ]
+        },
+        "actions": [],
+        "notes": "0 out-of-range, 0 near edge, 1 healthy"
+      },
+      "history_size": 1
+    }
+  ]
+}

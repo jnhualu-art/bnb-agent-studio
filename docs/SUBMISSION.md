@@ -82,7 +82,7 @@ Data sources: PancakeSwap/Uniswap V3 pools · Venus Protocol · Gate.io · DefiL
 
 | 字段 | 填什么 |
 |---|---|
-| **Demo / Live URL** | `https://youtu.be/cUfwagcq6BE`（demo 视频即是 live demo；前端公网部署待定，按多数黑客松要求"视频 + 仓库"即可，决赛再上 CloudStudio） |
+| **Demo / Live URL** | **Live Demo（CloudStudio 公网）**: `https://f7bfdd7f9a0446119ce25a12f3f12a00.app.workbuddy.link` · **Demo 视频（YouTube）**: `https://youtu.be/cUfwagcq6BE` |
 | **Repository** | `https://github.com/jnhualu-art/bnb-agent-studio`（已推送 main 分支，30 个 tracked 文件，私钥/`.env`/`.log` 已清空并 `.gitignore` 排除） |
 | **Video** | `https://youtu.be/cUfwagcq6BE`（YouTube 公开，标题：BNB Agent Studio — On-chain AI Agent Marketplace Demo） |
 | **Additional docs** | [`docs/Agent_Advantage_Report.md`](Agent_Advantage_Report.md)（TermiX $10k 赛道核心材料） |

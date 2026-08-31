@@ -11,11 +11,24 @@ const BASE =
   'http://127.0.0.1:8000/api'
 
 async function fetchJSON(path) {
-  const res = await fetch(`${BASE}${path}`)
-  if (!res.ok) {
-    throw new Error(`API ${path} failed: ${res.status}`)
+  try {
+    const res = await fetch(`${BASE}${path}`)
+    if (!res.ok) {
+      throw new Error(`API ${path} failed: ${res.status}`)
+    }
+    return res.json()
+  } catch (err) {
+    // 离线 fallback: CloudStudio 纯静态部署无后端时, 回退读本地真实链上快照
+    const localPath = '/data' + path + '.json'
+    try {
+      const r2 = await fetch(localPath)
+      if (!r2.ok) throw new Error(`local ${localPath} ${r2.status}`)
+      console.warn(`[api] 后端不可用, 使用本地快照: ${localPath}`)
+      return r2.json()
+    } catch (e2) {
+      throw err
+    }
   }
-  return res.json()
 }
 
 export function buildQuery(params = {}) {

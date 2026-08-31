@@ -3,6 +3,9 @@
 > BNB Chain 官方黑客松 **"The Smart Money Era: Build the Era"** 参赛项目
 > 目标：构建 BNB Smart Chain 上最好的 **AI Agent 市场（Marketplace）**
 
+**🌐 Live Demo（CloudStudio 公网）**: https://f7bfdd7f9a0446119ce25a12f3f12a00.app.workbuddy.link
+**🎥 Demo 视频（YouTube）**: https://youtu.be/cUfwagcq6BE
+
 ---
 
 ## 一、赛事关键信息（官方口径）

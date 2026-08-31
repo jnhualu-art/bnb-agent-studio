@@ -317,10 +317,24 @@
       let DATA = null;
       let ONCHAIN_TOTAL = 0;
 
+      // 离线 fallback: 后端不可用时读本地真实链上快照(CloudStudio 纯静态部署)
+      async function getJSON(path) {
+        try {
+          const r = await fetch(API + path);
+          if (!r.ok) throw new Error(String(r.status));
+          return await r.json();
+        } catch (e) {
+          const local = '/data' + path.replace(/^\/api/, '').split('?')[0] + '.json';
+          const r2 = await fetch(local);
+          if (!r2.ok) throw e;
+          return await r2.json();
+        }
+      }
+
       async function loadData() {
         const [ref, idxRes] = await Promise.all([
-          fetch(API + '/api/reference-agents').then((r) => r.json()),
-          fetch(API + '/api/agents?limit=6').then((r) => r.json())
+          getJSON('/api/reference-agents'),
+          getJSON('/api/agents?limit=6')
         ]);
         const byCat = {};
         (ref.agents || []).forEach((a) => { byCat[a.category] = a; });
@@ -549,7 +563,7 @@
 
           // 拉几个链上 agent 填 Scene 8
           try {
-            const idxRes = await fetch(API + '/api/agents?limit=6').then((r) => r.json());
+            const idxRes = await getJSON('/api/agents?limit=6');
             window.__ONCHAIN_LIST__ = idxRes.agents || [];
             const tbody = document.getElementById('scene8-tbody');
             tbody.innerHTML = (idxRes.agents || []).slice(0, 6).map((a) => `

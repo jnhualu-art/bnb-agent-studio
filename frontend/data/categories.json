@@ -1,0 +1,34 @@
+{
+  "categories": {
+    "rebalancing": {
+      "label": "Rebalancing",
+      "description": "Manages LP ranges, resets positions automatically",
+      "reference_agent": "rangeguard.agent",
+      "reference_agent_status": "running",
+      "onchain_indexed": 0
+    },
+    "grid_trading": {
+      "label": "Grid Trading",
+      "description": "Places and manages automated grid orders",
+      "reference_agent": "silent-martin.agent",
+      "reference_agent_status": "running",
+      "onchain_indexed": 0
+    },
+    "yield_optimisation": {
+      "label": "Yield Optimisation",
+      "description": "Routes liquidity to the highest available APR",
+      "reference_agent": "yieldpilot.agent",
+      "reference_agent_status": "running",
+      "onchain_indexed": 0
+    },
+    "health_factor": {
+      "label": "Health Factor Monitoring",
+      "description": "Protects lending positions from liquidation",
+      "reference_agent": "hfsentinel.agent",
+      "reference_agent_status": "running",
+      "onchain_indexed": 0
+    }
+  },
+  "onchain_total": 103,
+  "onchain_uncategorised": 0
+}

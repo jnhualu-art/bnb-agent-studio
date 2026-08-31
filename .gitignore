@@ -20,6 +20,11 @@ frontend/src/**/*.vue
 frontend/vite.config.js
 frontend/package.json
 
+# 本地 wheel 缓存(依赖各自环境装, 不进仓库; 见 backend/requirements.txt)
+wheels/
+wheels2/
+backend/agents/.cache_*.json
+
 # OS / editor
 .DS_Store
 Thumbs.db
