@@ -93,7 +93,7 @@ Data sources: PancakeSwap/Uniswap V3 pools · Venus Protocol · Gate.io · DefiL
 
 - [x] 视频已上传，链接可访问（**非公开链接也要确认能打开**）
 - [x] 仓库已推 GitHub，且：
-  - [x] 无私钥、无 API key（`grep c0hb539j|9fc0a774` 零命中，`.log` 全部清理，Alchemy key 改读环境变量）
+  - [x] 无私钥、无 API key（已全量 `grep` 校验 Alchemy key / testnet 私钥等敏感串零命中，`.log` 全部清理，Alchemy key 改读环境变量）
   - [x] `.gitignore` 包含 `.venv/`、`*.log`、`wheels/`、Vite 残留等
 - [x] `Agent_Advantage_Report.md` 已作为附加材料提交
 - [x] TermiX 赛道已勾选
